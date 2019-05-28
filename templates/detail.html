@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} | {{ detailblog.title }} {% endblock %}
+{% block content %}
+<main role="main">
+<div class="container makethh">
+	<br>
+	<h3 class="text-center pt-3">{{ detailblog.title }}</h3>
+	<p class="text-center img-center text-muted">{{ detailblog.pub_date }}</p> <hr>
+	<!-- <img  class="img-fluid" src="{{ detailblog.image.url }}" height=200 width=200> <br> -->
+	{{ detailblog.body | safe }} <br>
+
+</div>
+</main>
+{% endblock content %}

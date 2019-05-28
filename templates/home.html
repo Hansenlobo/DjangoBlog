@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} | About Me {% endblock %}
+{% block content %}
+    <div class="container makethh">
+      <p>
+
+        <img class="img-thumbnail mx-auto d-block" src="{% static 'edit2.jpg' %}" height="300" width="200">
+
+      </p>
+      <h3>About me</h3>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+<hr>
+<h3>Skillsets</h3>
+<ul>
+  <li>python</li>
+  <li>django</li>
+  <li>unix</li>
+  <li>sql</li>
+</ul>
+<h3>Projects</h3>
+<ul>
+  <li>Built a xkcd scrapper</li>
+  <li> A background changing app</li>
+  <li>Django movie app</li>
+  <li>Data analysis using pandas</li>
+</ul>
+
+
+<br>
+<br>
+    <p> For enquiries:   <a href="mailto:lobohaniel@gmail.com" target= "_blank" class="btn btn btn-outline-success text-center">Mail me!</a><br>
+    </p></div>
+{% endblock content %}
+<!--
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+      	{% for job in jobs.all %}
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="{{ job.image.url }}"
+            <div class="card-body">
+              <p class="card-text"> {{ job.summary }}</p>
+<!--               <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div> -->
+            </div>
+          </div>
+        </div>
+  		{% endfor %}
+      </div>
+    </div>
+  </div>
+
+</main> -->

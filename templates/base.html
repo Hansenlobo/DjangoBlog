@@ -1,0 +1,27 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="A basic blog and portfolio website built using django">
+  <meta name="author" content="Haniel Craig Lobo">
+  <meta name="generator" content="Jekyll v3.8.5">
+  <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+  <title>Haniel Lobo {% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'styles/github.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+    <body>
+        {% include 'header.html' %}
+        {% block content %}
+        {% endblock content %}
+        {% include 'footer.html' %}
+        {% include 'scripts.html' %}
+    </body>
+
+</html>

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+<!-- <main role="main" > -->
+{% block title %} | Blog {% endblock %}
+{% block content %}
+<div class="container">
+  <div class="row">
+  
+      <div class="col-lg-8">
+
+    	<br>
+    	{% for x in blogs.all %}
+    	<a href="{%url 'detail' post=x.slug %}"><h5>{{ x.title }}</h5></a>
+    	<div class="text-muted">
+        <span>{{ x.pub_date }}</span>
+        {% if not forloop.last %}
+        <hr>
+        {% endif %}
+      </div>
+    	<!-- <img  class="img-fluid" src="{{ x.image.url }}" height=200 width=200> <br>
+    	{{ x.summary }} <br> -->
+    	{% endfor %}
+
+    </div>
+<!-- </main> -->
+  <aside class="col-lg-4">
+        <!-- Widget [Search Bar Widget]-->
+        <br>
+        <div class="widget search">
+          <header>
+            <h3 class="h6">Search the blog</h3>
+          </header>
+          <form action="{% url 'search' %}" class="search-form">
+            <div class="form-group">
+              <input type="text" name="q" placeholder="Enter search term">
+              <button type="submit" class="submit"><i class="icon-search"></i></button>
+            </div>
+          </form>
+        </div>
+        <div class="widget categories">
+          <header>
+            <h3 class="h6">Categories</h3>
+          </header>
+          {% for cat in category_count %}
+            <div class="item d-flex justify-content-between"><a href="#">{{cat.categories__title}}</a><span>{{ cat.categories__count }}</span></div>
+          {% endfor %}
+        </div>
+  </aside>
+
+</div>
+</div>
+{% endblock content %}
