@@ -1,0 +1,114 @@
+
+  .widget.search .form-group {
+    position: relative;
+  }
+
+  .widget.search input {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background: none;
+}
+
+.widget.search input::-moz-placeholder {
+  color: #aaa;
+  font-family: "Open Sans", sans-serif;
+}
+
+.widget.search input::-webkit-input-placeholder {
+  color: #aaa;
+  font-family: "Open Sans", sans-serif;
+}
+
+.widget.search input:-ms-input-placeholder {
+  color: #aaa;
+  font-family: "Open Sans", sans-serif;
+}
+
+.widget.search .submit {
+  height: 40px;
+  padding: 0;
+  line-height: 40px;
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 0.9em;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+i[class*="icon-"] {
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+}
+  .widget {
+  margin-bottom: 40px;
+  padding: 30px;
+  border: 1px solid #eee;
+}
+.widget.categories .item {
+  background: #fafafa;
+  padding: 10px;
+  color: #777;
+  font-weight: 700;
+}
+
+.widget.categories .item:nth-of-type(2n+2) {
+  background: none;
+}
+
+.widget.categories .item a {
+  color: inherit;
+  font-size: 0.95em;
+}
+
+.widget.categories .item a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.widget.categories .item span {
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    a {
+      color:black;
+    }
+    a:hover{
+      color:green !important;
+    }
+
+    .maketh {
+      width:50%;
+      margin:auto;
+      font-size: 0.75rem;
+    }
+    .makethh {
+      width:50%;
+      margin:auto;
+    }
+/* .img-thumbnail{
+  border:50% !important;
+  align-items: center;
+} */
