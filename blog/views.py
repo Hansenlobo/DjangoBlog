@@ -6,7 +6,7 @@ from django.db.models import Count, Q
 
 
 def get_category_count():
-    queryset=Blog.objects.values('categories__title').annotate(Count('categories'))
+    queryset=Blog.objects.values('categories__title').annotate(Count('categories__title'))
     return queryset
 
 def search(request):
