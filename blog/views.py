@@ -17,6 +17,8 @@ def search(request):
     query = request.GET.get('q')
     if query:
         blogs = queryset.filter(Q(title__icontains=query) | Q(overview__icontains=query)).distinct()
+    else:
+        blogs = Blog.objects.all()
     context = {
         'blogs':blogs,
         'query':query,

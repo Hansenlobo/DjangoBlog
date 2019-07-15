@@ -47,7 +47,7 @@
             <h3 class="h6">Categories</h3>
           </header>
           {% for cat in category_count %}
-            <div class="item d-flex justify-content-between"><a href="#">{{cat.categories__title}}</a><span>{{ cat.categories__count }}</span></div>
+            <div class="item d-flex justify-content-between"><a href="#">{{cat}}</a><span>{{ cat.posts_count }}</span></div>
           {% endfor %}
         </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

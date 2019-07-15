@@ -19,7 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admincafe/', admin.site.urls),
     path('about/', include('jobs.urls')),
     path('', include('blog.urls')),
     path('tinymce/', include('tinymce.urls')),
